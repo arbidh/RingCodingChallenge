@@ -2,7 +2,7 @@
 //  RCImageViewController.swift
 //  RingCodingChallenge
 //
-//  Created by Rinie Ghazali on 8/21/17.
+//  Created by Arbi Derhartunian on 8/21/17.
 //  Copyright © 2017 arbiapps. All rights reserved.
 //
 
