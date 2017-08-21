@@ -9,15 +9,6 @@
 import Foundation
 
 
-struct ThumbnailData{
-    
-    var thumnailURL:String?
-    var thumnail_height:Int?
-    var thumnail_width:Int?
-    var thumnail_title:String?
-    
-}
-
 
 struct RCModel{
     
@@ -26,7 +17,7 @@ struct RCModel{
     var created:Int?
     var thumbnailURL:String?
     var numberOfComments:Int?
-    var listOfThumbnails:ThumbnailData?
+    var fullImageURL:String?
     
 }
 

@@ -15,9 +15,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    
     func setupView(){
         
         rcViewModel.viewModelDelegate = self
+        
     }
 
     func registerNib(){
@@ -60,14 +63,20 @@ extension ViewController:UICollectionViewDelegate, UICollectionViewDataSource{
         return rcViewModel.listOfRCData.count
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
        guard  let rcCell = collectionView.dequeueReusableCell(withReuseIdentifier:reuseID, for: indexPath) as?
         RCCell else{
             return UICollectionViewCell()
         }
+    
        
-        rcCell.setupCell(rcList: rcViewModel.listOfRCData, indexPath: indexPath )
+        rcCell.setupCell(rcList: rcViewModel.listOfRCData, indexPath: indexPath, vc: self)
         
         DispatchQueue.global().async {
             
@@ -80,9 +89,13 @@ extension ViewController:UICollectionViewDelegate, UICollectionViewDataSource{
                     if let image = image {
                     
                         rcCell.imgView.image = image
+                        rcCell.contentMode = .scaleAspectFill
                         rcCell.imgView.clipsToBounds = true
+               
                     }
+                    rcCell.listOfData = self.rcViewModel.listOfRCData
                 }
+                
                 
             }, fail: { error in
                 
@@ -99,7 +112,27 @@ extension ViewController:UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 400, height: 138)
+        //calculation for aspect ratio
+        let height = (view.frame.width - 16 - 16) * 9 / 16 - 20
+        
+        if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation){
+            
+                 return CGSize(width: view.frame.size.width , height: height)
+        }
+        if UIDevice.current.userInterfaceIdiom ==  UIUserInterfaceIdiom.pad{
+             return CGSize(width: view.frame.width, height: height)
+        }
+        else{
+                 return CGSize(width: view.frame.width, height: height )
+        }
+    
+        
+        
+    }
+    
+    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
+        
+        collectionView.reloadData()
         
     }
     

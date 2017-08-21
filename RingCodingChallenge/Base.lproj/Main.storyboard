@@ -60,7 +60,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="164" y="91"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="nEx-Rn-Tnv">
+            <objects>
+                <viewController storyboardIdentifier="RCImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fr9-rt-LDr" customClass="RCImageViewController" customModule="RingCodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gtN-EE-iN5"/>
+                        <viewControllerLayoutGuide type="bottom" id="EnC-ts-gJS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5fv-xx-8u3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uhb-hT-BVv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EnC-ts-gJS" firstAttribute="top" secondItem="Uhb-hT-BVv" secondAttribute="bottom" id="Apk-6v-OKN"/>
+                            <constraint firstItem="Uhb-hT-BVv" firstAttribute="top" secondItem="5fv-xx-8u3" secondAttribute="top" id="Hqp-Jc-Byw"/>
+                            <constraint firstItem="Uhb-hT-BVv" firstAttribute="leading" secondItem="5fv-xx-8u3" secondAttribute="leading" id="Npy-T2-qfx"/>
+                            <constraint firstAttribute="trailing" secondItem="Uhb-hT-BVv" secondAttribute="trailing" id="ycU-KF-WED"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vXj-Hw-nGO">
+                        <barButtonItem key="backBarButtonItem" title="Return" id="ra4-qp-qgL"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="etM-mF-jTl">
+                            <connections>
+                                <action selector="back:" destination="Fr9-rt-LDr" id="gKL-8D-poi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="Uhb-hT-BVv" id="nig-Be-eSB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0H-xc-fWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="91.304347826086968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0P9-RG-ILv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DrN-tc-I8i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OYF-fQ-ON0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fr9-rt-LDr" kind="relationship" relationship="rootViewController" id="yJN-qz-F33"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="siw-AX-tjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="91.304347826086968"/>
         </scene>
     </scenes>
 </document>

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C30FB231F4A880F004749F7 /* RCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C30FB221F4A880F004749F7 /* RCCell.xib */; };
 		9C30FB251F4A8856004749F7 /* RCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30FB241F4A8856004749F7 /* RCCell.swift */; };
+		9C30FB271F4AF6DD004749F7 /* RCImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30FB261F4AF6DD004749F7 /* RCImageViewController.swift */; };
 		9C77D57D1F4A461D0078CB28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77D57C1F4A461D0078CB28 /* AppDelegate.swift */; };
 		9C77D57F1F4A461D0078CB28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77D57E1F4A461D0078CB28 /* ViewController.swift */; };
 		9C77D5821F4A461D0078CB28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C77D5801F4A461D0078CB28 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		9C30FB221F4A880F004749F7 /* RCCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCCell.xib; sourceTree = "<group>"; };
 		9C30FB241F4A8856004749F7 /* RCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCCell.swift; sourceTree = "<group>"; };
+		9C30FB261F4AF6DD004749F7 /* RCImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCImageViewController.swift; sourceTree = "<group>"; };
 		9C77D5791F4A461D0078CB28 /* RingCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C77D57C1F4A461D0078CB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C77D57E1F4A461D0078CB28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				9C77D5901F4A46C30078CB28 /* RCModel.swift */,
 				9C30FB221F4A880F004749F7 /* RCCell.xib */,
 				9C30FB241F4A8856004749F7 /* RCCell.swift */,
+				9C30FB261F4AF6DD004749F7 /* RCImageViewController.swift */,
 			);
 			path = RingCodingChallenge;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C30FB251F4A8856004749F7 /* RCCell.swift in Sources */,
+				9C30FB271F4AF6DD004749F7 /* RCImageViewController.swift in Sources */,
 				9C77D57F1F4A461D0078CB28 /* ViewController.swift in Sources */,
 				9C77D57D1F4A461D0078CB28 /* AppDelegate.swift in Sources */,
 				9C77D5911F4A46C30078CB28 /* RCModel.swift in Sources */,

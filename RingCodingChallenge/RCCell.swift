@@ -16,6 +16,10 @@ class RCCell: UICollectionViewCell {
     @IBOutlet weak var commentLbl: UILabel!
     @IBOutlet weak var updatedLbl: UILabel!
     
+    var imageURL:String? = nil
+    var listOfData:[RCModel] = []
+    weak var vc:ViewController?
+
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,20 +27,53 @@ class RCCell: UICollectionViewCell {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+       
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+         setupGestureRecognizer()
+    }
+    @IBAction func showImage(_ sender: UITapGestureRecognizer) {
+        
+            
+         
+                
+                let storyBoard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+               if let vc =  storyBoard.instantiateViewController(withIdentifier: "RCImageViewController") as? RCImageViewController
+               {
+                    let index = imgView.tag
+                
+                    vc.imageURL = listOfData[index].fullImageURL
+                
+                    let navController = UINavigationController(rootViewController: vc)
+                    self.vc?.present(navController, animated: true, completion: nil)
+                    
+                }
+        
+    }
+   
+    func setupGestureRecognizer(){
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showImage(_:)))
+        imgView.addGestureRecognizer(tapGesture)
+        
     }
     
-    func setupCell(rcList:[RCModel], indexPath:IndexPath){
+    
+    func setupCell(rcList:[RCModel], indexPath:IndexPath, vc:ViewController){
+        
+        if indexPath.row == 0{
+            
+           
+            self.vc = vc
+        }
         
         if let title = rcList[indexPath.row].title,
            let author = rcList[indexPath.row].author,
            let numComments = rcList[indexPath.row].numberOfComments,
             let created = rcList[indexPath.row].created{
             
-            let title2 = title as NSString
+
             titleLbl.sizeThatFits(CGSize(width: title.width(withConstraintedHeight: 50, font: UIFont.systemFont(ofSize: 13)), height: title.height(withConstrainedWidth: 50, font: UIFont.systemFont(ofSize: 13))))
             titleLbl.text = title
             commentLbl.text = "\(numComments) comments"
@@ -44,6 +81,13 @@ class RCCell: UICollectionViewCell {
             updatedLbl.textColor = UIColor.gray
             updatedLbl.text = "submitted \(time) ago by"
             authorLbl.text = author
+            
+            if let url = rcList[indexPath.row].fullImageURL{
+                imgView.tag = indexPath.row
+                imageURL = url
+            }
+            
+            
         
         }
     

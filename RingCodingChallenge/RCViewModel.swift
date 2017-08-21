@@ -126,37 +126,43 @@ class RCViewModel{
             return
         }
         
-      _ =   listOfReturnData.map({ milo in   milo?.allKeys.forEach({ key in
+      _ =   listOfReturnData.map({ data in   data?.allKeys.forEach({ key in
             
             if let keys = key as? String {
       
                 switch(keys){
                 case "num_comments":
                     
-                    if let numComments = milo?.value(forKey: keys) as? Int{
+                    if let numComments = data?.value(forKey: keys) as? Int{
                         rcData.numberOfComments = numComments
                     }
                 
                 case "thumbnail":
                 
-                    if let thumbnail = milo?.value(forKey: keys) as? String{
+                    if let thumbnail = data?.value(forKey: keys) as? String{
                         rcData.thumbnailURL = thumbnail
                     }
                 case "author":
                 
-                    if let author = milo?.value(forKey: keys) as? String{
+                    if let author = data?.value(forKey: keys) as? String{
                         rcData.author = author
                     }
                 case "title":
                 
-                    if let title = milo?.value(forKey: keys) as? String{
+                    if let title = data?.value(forKey: keys) as? String{
                         rcData.title = title
                     }
                 case "created_utc":
                 
-                    if let createdUtc = milo?.value(forKey: keys) as? Int{
+                    if let createdUtc = data?.value(forKey: keys) as? Int{
                         rcData.created = createdUtc
                     }
+                    
+                case "url" :
+                    if let imageURL = data?.value(forKey: keys) as? String{
+                       rcData.fullImageURL = imageURL
+                    }
+                    
                     
                 default:
                     break
