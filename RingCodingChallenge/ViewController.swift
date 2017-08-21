@@ -15,14 +15,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
+    let cache = NSCache<NSString, UIImage>()
+    let refreshControl = UIRefreshControl()
     
     func setupView(){
         
         rcViewModel.viewModelDelegate = self
+        self.collectionView.alwaysBounceVertical = true
+        
+        refreshControl.tintColor = .blue
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        collectionView.addSubview(refreshControl)
+        collectionView.alwaysBounceVertical = true
+    }
+    
+    
+
+    func refresh(){
+        rcViewModel.fetchTopReddits()
+        refreshControl.endRefreshing()
         
     }
-
+    
     func registerNib(){
         
         let nib = UINib(nibName: "RCCell", bundle: nil)
@@ -31,6 +45,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        rcViewModel.listOfRCData.removeAll()
         rcViewModel.fetchTopReddits()
     }
     
@@ -38,8 +53,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         registerNib()
         setupView()
-        
-        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -75,6 +88,7 @@ extension ViewController:UICollectionViewDelegate, UICollectionViewDataSource{
             return UICollectionViewCell()
         }
     
+        
        
         rcCell.setupCell(rcList: rcViewModel.listOfRCData, indexPath: indexPath, vc: self)
         
@@ -83,24 +97,41 @@ extension ViewController:UICollectionViewDelegate, UICollectionViewDataSource{
     
         if let imageurl = self.rcViewModel.listOfRCData[indexPath.row].thumbnailURL{
             
-            self.rcViewModel.fetchPicturesWithURL(urlString: imageurl, success: { image in
+            if let image = self.cache.object(forKey: "image")
+            {
+                rcCell.imgView.image = image
+                rcCell.contentMode = .scaleAspectFill
+                rcCell.imgView.clipsToBounds = true
+            
+              
+                rcCell.listOfData = self.rcViewModel.listOfRCData
+                
+            }
+            else{
+            self.rcViewModel.fetchPicturesWithURL(urlString: imageurl, success: {[weak self] image in
                 
                 DispatchQueue.main.async {
                     if let image = image {
+                        
+                        
+                        self?.cache.setObject(image, forKey: imageurl as NSString)
                     
                         rcCell.imgView.image = image
                         rcCell.contentMode = .scaleAspectFill
                         rcCell.imgView.clipsToBounds = true
                
                     }
-                    rcCell.listOfData = self.rcViewModel.listOfRCData
+                    if let rcdata = self?.rcViewModel.listOfRCData{
+                        rcCell.listOfData = rcdata
+                    }
                 }
                 
                 
             }, fail: { error in
                 
-            })
+               })
             }
+          }
         }
         return rcCell
     }
@@ -113,20 +144,19 @@ extension ViewController:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         //calculation for aspect ratio
-        let height = (view.frame.width - 16 - 16) * 9 / 16 
+        let height = (view.frame.width - 16 - 16) * 9 / 16 - 70
         
         if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation){
             
                  return CGSize(width: view.frame.size.width , height: height)
         }
         if UIDevice.current.userInterfaceIdiom ==  UIUserInterfaceIdiom.pad{
-             return CGSize(width: view.frame.width, height: height)
+                 return CGSize(width: view.frame.width, height: height)
         }
         else{
                  return CGSize(width: view.frame.width, height: height )
         }
-    
-        
+
         
     }
     
@@ -136,6 +166,9 @@ extension ViewController:UICollectionViewDelegateFlowLayout{
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
     
 }
 

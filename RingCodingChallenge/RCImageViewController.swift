@@ -12,6 +12,7 @@ class RCImageViewController: UIViewController {
     
     
     @IBOutlet weak var imageView: UIImageView!
+    var activityView:UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.white)
     var imageURL:String?
     
     
@@ -34,22 +35,26 @@ class RCImageViewController: UIViewController {
     
     func fetchImages(){
         
-            
-            let viewModel = RCViewModel()
+        activityView.center = self.view.center
+        self.view.addSubview(activityView)
+        activityView.startAnimating()
+        
+        let viewModel = RCViewModel()
         
         DispatchQueue.global().async {
-            
-        
-            
-            viewModel.fetchPicturesWithURL(urlString: self.imageURL, success: { image in
+          
+
+            viewModel.fetchPicturesWithURL(urlString: self.imageURL, success: {[weak self] image in
               
                 DispatchQueue.main.async {
-                    self.imageView.image = image
+                    self?.imageView.image = image
+                    self?.activityView.stopAnimating()
+            
                     
                 }
                 
             }, fail: { error in
-                
+                print(error)
             })
         
         }
@@ -60,6 +65,10 @@ class RCImageViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.activityView.removeFromSuperview()
     }
     
 

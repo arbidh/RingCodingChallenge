@@ -72,7 +72,7 @@ class RCViewModel{
             return
         }
         
-        URLSession.shared.dataTask(with: url) { data , resp, error in
+        URLSession.shared.dataTask(with: url) {[weak self] data , resp, error in
             
             guard let data = data else{
                 return
@@ -83,19 +83,17 @@ class RCViewModel{
                     return
                 }
                 
-                self.populateRedditData(datadict: jsonData)
-                
-                if self.listOfRCData.count > 0{
+                self?.populateRedditData(datadict: jsonData)
+            
                     
                     if error != nil{
-                        self.viewModelDelegate?.dataFailed(error: RCErrorType.APIError(desc: error.debugDescription))
+                        self?.viewModelDelegate?.dataFailed(error: RCErrorType.APIError(desc: error.debugDescription))
                     
                     }
                     else{
-                        self.viewModelDelegate?.dataReceivedSuccessFully(data: self.listOfRCData)
+                        self?.viewModelDelegate?.dataReceivedSuccessFully(data: self?.listOfRCData)
                     }
-                    
-                }
+                
                 
               }catch{
                 
@@ -106,6 +104,10 @@ class RCViewModel{
     }
     
     func populateRedditData(datadict:NSDictionary?){
+        
+        if listOfRCData.count > 1{
+            listOfRCData.removeAll()
+        }
         
         guard let datadict = datadict else{
             return
@@ -126,41 +128,41 @@ class RCViewModel{
             return
         }
         
-      _ =   listOfReturnData.map({ data in   data?.allKeys.forEach({ key in
+      _ =   listOfReturnData.map({ milo in   milo?.allKeys.forEach({ key in
             
             if let keys = key as? String {
       
                 switch(keys){
                 case "num_comments":
                     
-                    if let numComments = data?.value(forKey: keys) as? Int{
+                    if let numComments = milo?.value(forKey: keys) as? Int{
                         rcData.numberOfComments = numComments
                     }
                 
                 case "thumbnail":
                 
-                    if let thumbnail = data?.value(forKey: keys) as? String{
+                    if let thumbnail = milo?.value(forKey: keys) as? String{
                         rcData.thumbnailURL = thumbnail
                     }
                 case "author":
                 
-                    if let author = data?.value(forKey: keys) as? String{
+                    if let author = milo?.value(forKey: keys) as? String{
                         rcData.author = author
                     }
                 case "title":
                 
-                    if let title = data?.value(forKey: keys) as? String{
+                    if let title = milo?.value(forKey: keys) as? String{
                         rcData.title = title
                     }
                 case "created_utc":
                 
-                    if let createdUtc = data?.value(forKey: keys) as? Int{
+                    if let createdUtc = milo?.value(forKey: keys) as? Int{
                         rcData.created = createdUtc
                     }
                     
                 case "url" :
-                    if let imageURL = data?.value(forKey: keys) as? String{
-                       rcData.fullImageURL = imageURL
+                    if let images = milo?.value(forKey: keys) as? String{
+                       rcData.fullImageURL = images
                     }
                     
                     

@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCViewModel.swift"
-            timestampString = "525024527.865311"
+            timestampString = "525027379.30039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "fetchTopReddits()"
             landmarkType = "7">
             <Locations>
@@ -154,7 +154,7 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCViewModel.swift"
-                  timestampString = "525023781.606844"
+                  timestampString = "525026983.644158"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "75"
@@ -169,7 +169,7 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCViewModel.swift"
-                  timestampString = "525023781.609027"
+                  timestampString = "525026983.64782"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "77"
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCViewModel.swift"
-            timestampString = "525024527.865311"
+            timestampString = "525027379.30039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "fetchTopReddits()"
             landmarkType = "7">
             <Locations>
@@ -202,7 +202,7 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCViewModel.swift"
-                  timestampString = "525023781.61405"
+                  timestampString = "525026983.653746"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "104"
@@ -217,7 +217,7 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCViewModel.swift"
-                  timestampString = "525023781.616338"
+                  timestampString = "525026983.65538"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "104"
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCViewModel.swift"
-            timestampString = "525024527.865311"
+            timestampString = "525027379.30039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "populateRedditData(datadict:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCViewModel.swift"
-            timestampString = "525024527.865311"
+            timestampString = "525027379.30039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "populateRedditData(datadict:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCViewModel.swift"
-            timestampString = "525024527.865311"
+            timestampString = "525027379.30039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "fetchTopReddits()"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/ViewController.swift"
-            timestampString = "525024409.566822"
+            timestampString = "525030981.967449"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "collectionView(_:layout:sizeForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCViewModel.swift"
-            timestampString = "525024527.865311"
+            timestampString = "525027379.30039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "populateRedditData(datadict:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024221.607027"
+            timestampString = "525029983.140893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,11 +330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCCell.swift"
-            timestampString = "525021704.83289"
+            timestampString = "525028961.395376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "showImage(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCCell.swift"
-            timestampString = "525021540.644006"
+            timestampString = "525028961.395376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "showImage(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/ViewController.swift"
-            timestampString = "525010374.564265"
+            timestampString = "525031044.710248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -378,7 +378,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCCell.swift"
-            timestampString = "525023871.359857"
+            timestampString = "525028961.395376"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "showImage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RingCodingChallenge/RCCell.swift"
+            timestampString = "525028961.395376"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "showImage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RingCodingChallenge/RCCell.swift"
+            timestampString = "525028961.395376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -393,44 +425,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RingCodingChallenge/RCCell.swift"
-            timestampString = "525023871.359857"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "showImage(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RingCodingChallenge/RCCell.swift"
-            timestampString = "525021704.83289"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "showImage(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024830.522687"
+            timestampString = "525030102.384529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "fetchImages()"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,29 +442,14 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024830.522687"
+            timestampString = "525030191.238649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "fetchImages()"
             landmarkType = "7">
             <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1)"
-                  moduleName = "RingCodingChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.672272"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "240">
-               </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
@@ -473,11 +458,26 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.674301"
+                  timestampString = "525026983.710516"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "240">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "RingCodingChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
+                  timestampString = "525026983.712857"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
                   offsetFromSymbolStart = "166">
                </Location>
             </Locations>
@@ -490,29 +490,14 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024830.522687"
+            timestampString = "525030191.238649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "fetchImages()"
             landmarkType = "7">
             <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1)"
-                  moduleName = "RingCodingChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.679032"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "23">
-               </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
@@ -521,11 +506,26 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.680756"
+                  timestampString = "525026983.718207"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "RingCodingChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
+                  timestampString = "525026983.720149"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
                   offsetFromSymbolStart = "23">
                </Location>
             </Locations>
@@ -538,11 +538,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525022244.21776"
+            timestampString = "525029983.140893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "RCImageViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -554,11 +554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024221.607027"
+            timestampString = "525029983.140893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -570,7 +570,55 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024830.522687"
+            timestampString = "525030052.223821"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "fetchImages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RingCodingChallenge.RCImageViewController.fetchImages () -&gt; ()"
+                  moduleName = "RingCodingChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
+                  timestampString = "525026983.735669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1)"
+                  moduleName = "RingCodingChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
+                  timestampString = "525026983.738353"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RingCodingChallenge/RCImageViewController.swift"
+            timestampString = "525030052.223821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -586,7 +634,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024409.566822"
+            timestampString = "525029983.140893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -602,75 +650,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024409.566822"
+            timestampString = "525030191.238649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "fetchImages()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024830.522687"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "fetchImages()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RingCodingChallenge.RCImageViewController.fetchImages () -&gt; ()"
-                  moduleName = "RingCodingChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.706144"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "43">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1)"
-                  moduleName = "RingCodingChallenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.708766"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "23">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024830.522687"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "fetchImages()"
             landmarkType = "7">
             <Locations>
@@ -682,12 +666,12 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.714774"
+                  timestampString = "525026983.751049"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "23">
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "30">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -697,11 +681,11 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.716949"
+                  timestampString = "525026983.752886"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
                   offsetFromSymbolStart = "23">
                </Location>
             </Locations>
@@ -714,11 +698,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCImageViewController.swift"
-            timestampString = "525024830.522687"
+            timestampString = "525030191.238649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "fetchImages()"
             landmarkType = "7">
             <Locations>
@@ -726,17 +710,50 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RingCodingChallenge.RCImageViewController.fetchImages () -&gt; ()"
+                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1).(closure #1)"
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.722209"
+                  timestampString = "525026983.757697"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "43">
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "23">
                </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1).(closure #1).(closure #1)"
+                  moduleName = "RingCodingChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
+                  timestampString = "525026983.76149"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RingCodingChallenge/RCImageViewController.swift"
+            timestampString = "525030191.238649"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchImages()"
+            landmarkType = "7">
+            <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
@@ -745,11 +762,26 @@
                   moduleName = "RingCodingChallenge"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
-                  timestampString = "525023781.724665"
+                  timestampString = "525026983.778603"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RingCodingChallenge.RCImageViewController.(fetchImages () -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "RingCodingChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinieghazali/Documents/algo/RingCodingChallenge/RingCodingChallenge/RCImageViewController.swift"
+                  timestampString = "525026983.780521"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
                   offsetFromSymbolStart = "23">
                </Location>
             </Locations>
@@ -810,11 +842,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RingCodingChallenge/RCCell.swift"
-            timestampString = "525023780.510877"
+            timestampString = "525028961.395376"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "showImage(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -833,6 +865,38 @@
             endingLineNumber = "56"
             landmarkName = "fetchPicturesWithURL(urlString:success:fail:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RingCodingChallenge/RCViewModel.swift"
+            timestampString = "525027379.30039"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "populateRedditData(datadict:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RingCodingChallenge/RCViewModel.swift"
+            timestampString = "525027379.30039"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "RCViewModel"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

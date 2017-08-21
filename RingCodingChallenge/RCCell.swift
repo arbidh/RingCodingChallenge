@@ -19,10 +19,16 @@ class RCCell: UICollectionViewCell {
     var imageURL:String? = nil
     var listOfData:[RCModel] = []
     weak var vc:ViewController?
-
+    var tapGesture:UITapGestureRecognizer?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+      
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -43,9 +49,7 @@ class RCCell: UICollectionViewCell {
                if let vc =  storyBoard.instantiateViewController(withIdentifier: "RCImageViewController") as? RCImageViewController
                {
                     let index = imgView.tag
-                
                     vc.imageURL = listOfData[index].fullImageURL
-                
                     let navController = UINavigationController(rootViewController: vc)
                     self.vc?.present(navController, animated: true, completion: nil)
                     
@@ -54,9 +58,15 @@ class RCCell: UICollectionViewCell {
     }
    
     func setupGestureRecognizer(){
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showImage(_:)))
-        imgView.addGestureRecognizer(tapGesture)
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(showImage(_:)))
+        imgView.addGestureRecognizer(tapGesture!)
         
+    }
+    deinit {
+        listOfData.removeAll()
+        if let tapGesture = tapGesture{
+            imgView.removeGestureRecognizer(tapGesture)
+        }
     }
     
     
@@ -71,7 +81,7 @@ class RCCell: UICollectionViewCell {
         if let title = rcList[indexPath.row].title,
            let author = rcList[indexPath.row].author,
            let numComments = rcList[indexPath.row].numberOfComments,
-            let created = rcList[indexPath.row].created{
+           let created = rcList[indexPath.row].created{
             
 
             titleLbl.sizeThatFits(CGSize(width: title.width(withConstraintedHeight: 50, font: UIFont.systemFont(ofSize: 13)), height: title.height(withConstrainedWidth: 50, font: UIFont.systemFont(ofSize: 13))))
