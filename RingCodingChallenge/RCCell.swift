@@ -36,14 +36,67 @@ class RCCell: UICollectionViewCell {
            let numComments = rcList[indexPath.row].numberOfComments,
             let created = rcList[indexPath.row].created{
             
+            let title2 = title as NSString
+            titleLbl.sizeThatFits(CGSize(width: title.width(withConstraintedHeight: 50, font: UIFont.systemFont(ofSize: 13)), height: title.height(withConstrainedWidth: 50, font: UIFont.systemFont(ofSize: 13))))
             titleLbl.text = title
+            commentLbl.text = "\(numComments) comments"
+            let time = calculateTime(utcTime:created)
+            updatedLbl.textColor = UIColor.gray
+            updatedLbl.text = "submitted \(time) ago by"
             authorLbl.text = author
-            commentLbl.text = "\(numComments)"
-            updatedLbl.text = "\(created)"
-            
+        
         }
     
 
     }
     
+}
+
+extension RCCell{
+    
+    
+    func calculateTime(utcTime:Int)->String{
+  
+        let date = Date(timeIntervalSince1970: TimeInterval(utcTime))
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone.current
+        dateFormatter.dateFormat = "EEE, MMM d, yyyy - h:mm a"
+        
+        let firstDate = dateFormatter.string(from: date)
+        if  let originalDate = dateFormatter.date(from: firstDate){
+        
+            guard let calculatedString = getStringHoursFromDate(Fromdate: originalDate, toDate: Date()) else {
+                return " "
+            }
+            return calculatedString
+        }
+        return " "
+    }
+
+    func getStringHoursFromDate(Fromdate:Date, toDate:Date) ->String?{
+        
+        let dateComponentsFormatter = DateComponentsFormatter()
+        dateComponentsFormatter.allowedUnits = [.year,.month,.weekOfYear,.day,.hour,.minute,.second]
+        dateComponentsFormatter.maximumUnitCount = 1
+        dateComponentsFormatter.unitsStyle = .full
+        return dateComponentsFormatter.string(from: Fromdate   , to: toDate)
+        
+    }
+
+    
+}
+extension String {
+    func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        
+        return ceil(boundingBox.height)
+    }
+    
+    func width(withConstraintedHeight height: CGFloat, font: UIFont) -> CGFloat {
+        let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: font], context: nil)
+        
+        return ceil(boundingBox.width)
+    }
 }
