@@ -113,7 +113,7 @@ extension ViewController:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         //calculation for aspect ratio
-        let height = (view.frame.width - 16 - 16) * 9 / 16 - 20
+        let height = (view.frame.width - 16 - 16) * 9 / 16 
         
         if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation){
             

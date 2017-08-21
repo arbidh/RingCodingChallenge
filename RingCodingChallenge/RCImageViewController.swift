@@ -36,6 +36,10 @@ class RCImageViewController: UIViewController {
         
             
             let viewModel = RCViewModel()
+        
+        DispatchQueue.global().async {
+            
+        
             
             viewModel.fetchPicturesWithURL(urlString: self.imageURL, success: { image in
               
@@ -48,7 +52,7 @@ class RCImageViewController: UIViewController {
                 
             })
         
-        
+        }
     }
     
     
